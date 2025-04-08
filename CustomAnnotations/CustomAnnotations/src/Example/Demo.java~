@@ -1,0 +1,22 @@
+package Example;
+
+
+@MyAnno(name = "Hello", city = "Noida")
+public class Demo {
+
+    @MyAnno(name = "Hello", city = "Noida")
+    public void display() {
+        System.out.println("Hello");
+    }
+
+    public static void main(String[] args) {
+        apple.main(new String[]{"args"});
+    }
+
+
+}
+interface apple{
+    public static void main(String[] args) {
+        System.out.println("hello");
+    }
+        }
