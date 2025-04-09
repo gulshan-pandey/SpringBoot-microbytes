@@ -31,7 +31,7 @@ public class UserController {
         return "Deleted user with id: " + id;
     }
 
-    @GetMapping("/do/{id}")                 // this example is for checking is the serializer is working for polymorphic classes and how it is storing it in the redis cache
+    @GetMapping("/do/{id}")                 // this example is for checking if the serializer is working for polymorphic classes and how it is storing it in the redis cache
     public Animal action(@PathVariable int id) {
         return userService.getAnimal(id);
     }
