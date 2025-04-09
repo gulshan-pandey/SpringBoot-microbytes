@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class TestEntityService {
 
-    @PersistenceContext
+    @PersistenceContext            // to make sure that we use the EntityManager of the same persistent context
     private EntityManager entityManager;
 
     @Autowired
